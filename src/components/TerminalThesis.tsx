@@ -41,7 +41,7 @@ export function TerminalThesis({ isDark }: TerminalThesisProps) {
       initial={{ opacity: 0, y: 5 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className={`p-3.5 border-l-2 rounded-r-[2px] font-mono text-xs sm:text-[13px] leading-relaxed max-w-2xl transition-colors select-none relative group ${
+      className={`p-4.5 sm:p-5 sm:px-6 border-l-2 rounded-r-[2px] font-mono text-xs sm:text-[13px] leading-relaxed max-w-4xl transition-colors select-none relative group ${
         isDark
           ? 'border-l-[#2F4BFF] bg-[#161b26] text-[#EDEDEB]'
           : 'border-l-[#2F4BFF] bg-[#F2F6FC] text-[#1F1F1D]'

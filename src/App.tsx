@@ -38,7 +38,7 @@ export default function App() {
           isDark ? 'border-[#26272c] bg-[#111215]' : 'border-[#e0ded5] bg-[#FAF9F5]/90 backdrop-blur-xs'
         }`}
       >
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between font-mono text-xs">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-12 h-16 sm:h-18 flex items-center justify-between font-mono text-xs">
           {/* Logo / Equipment Label Terminal Key */}
           <div className="flex items-center gap-3 select-none">
             <div
@@ -105,9 +105,9 @@ export default function App() {
       </header>
 
       {/* Main Single-Scroll Column */}
-      <main className="flex-1 max-w-4xl mx-auto w-full px-5 sm:px-8 py-12 sm:py-16 space-y-16 relative z-10">
+      <main className="flex-1 max-w-6xl mx-auto w-full px-6 sm:px-10 lg:px-12 py-14 sm:py-20 space-y-20 relative z-10">
         {/* Section: Hero */}
-        <section id="hero" className="space-y-5">
+        <section id="hero" className="space-y-6 sm:space-y-7">
           <div
             className={`flex items-center gap-2 font-mono text-xs uppercase tracking-wider ${
               isDark ? 'text-[#A09E96]' : 'text-[#777168]'
@@ -121,7 +121,7 @@ export default function App() {
 
           {/* Memorable Line - Crisp and High Contrast */}
           <h1
-            className={`text-3xl sm:text-5xl lg:text-6xl font-serif font-medium tracking-tight leading-[1.12] ${
+            className={`text-3xl sm:text-5xl lg:text-6xl font-serif font-medium tracking-tight leading-[1.12] max-w-4xl ${
               isDark ? 'text-[#EDEDEB]' : 'text-[#1F1F1D]'
             }`}
           >
@@ -141,7 +141,7 @@ export default function App() {
 
           {/* The One Explanatory Paragraph - High contrast body text */}
           <p
-            className={`text-lg sm:text-xl font-serif leading-relaxed max-w-2xl ${
+            className={`text-lg sm:text-xl font-serif leading-relaxed max-w-3xl lg:max-w-4xl ${
               isDark ? 'text-[#DEDCD4]' : 'text-[#33312C]'
             }`}
           >
@@ -199,13 +199,13 @@ export default function App() {
           </div>
 
           <div
-            className={`border p-6 sm:p-7 rounded-[2px] relative ${
+            className={`border p-6 sm:p-8 lg:p-10 rounded-[2px] relative ${
               isDark ? 'border-[#26272c] bg-[#14151a]' : 'border-[#dcd9ce] bg-white'
             }`}
           >
             {/* Asymmetric Engineer's Stamped Annotation Badge breaking sterile perfection */}
             <div
-              className={`hidden sm:flex items-center gap-1.5 absolute -top-3 right-6 px-2.5 py-0.5 border text-[10px] font-mono tracking-wider uppercase rounded-[1px] rotate-[-0.5deg] shadow-xs select-none ${
+              className={`hidden sm:flex items-center gap-1.5 absolute -top-3 right-8 px-2.5 py-0.5 border text-[10px] font-mono tracking-wider uppercase rounded-[1px] rotate-[-0.5deg] shadow-xs select-none ${
                 isDark
                   ? 'border-[#C96A2B] bg-[#1a1512] text-[#E08546]'
                   : 'border-[#C96A2B] bg-[#FFFBF7] text-[#C96A2B]'
@@ -216,14 +216,14 @@ export default function App() {
               <span>ZERO RAW DB ACCESS</span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative">
               {/* Step 1: Your Systems */}
               <div
-                className={`p-5 border rounded-[2px] flex flex-col justify-between space-y-3 transition-colors ${
+                className={`p-6 lg:p-7 border rounded-[2px] flex flex-col justify-between space-y-4 transition-colors ${
                   isDark ? 'border-[#33353d] bg-[#171920]' : 'border-[#d4d0c5] bg-[#FAF9F5]'
                 }`}
               >
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span
                       className={`font-mono text-[10px] uppercase tracking-wider font-semibold ${
@@ -264,13 +264,13 @@ export default function App() {
 
               {/* Step 2: CloseMind Operating Layer - Hero cobalt blue accent */}
               <div
-                className={`p-5 border-2 rounded-[2px] flex flex-col justify-between space-y-3 transition-colors relative ${
+                className={`p-6 lg:p-7 border-2 rounded-[2px] flex flex-col justify-between space-y-4 transition-colors relative ${
                   isDark
                     ? 'border-[#3b82f6] bg-[#131926]'
                     : 'border-[#2F4BFF] bg-[#F2F6FC]'
                 }`}
               >
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span
                       className={`font-mono text-[10px] uppercase font-bold tracking-wider ${
@@ -311,11 +311,11 @@ export default function App() {
 
               {/* Step 3: AI Agents */}
               <div
-                className={`p-5 border rounded-[2px] flex flex-col justify-between space-y-3 transition-colors ${
+                className={`p-6 lg:p-7 border rounded-[2px] flex flex-col justify-between space-y-4 transition-colors ${
                   isDark ? 'border-[#33353d] bg-[#171920]' : 'border-[#d4d0c5] bg-[#FAF9F5]'
                 }`}
               >
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span
                       className={`font-mono text-[10px] uppercase tracking-wider font-semibold ${
@@ -357,7 +357,7 @@ export default function App() {
 
             {/* Asymmetric Field Margin Note */}
             <div
-              className={`mt-4 pt-3 border-t flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-[11px] ${
+              className={`mt-6 pt-4 border-t flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-[11px] ${
                 isDark ? 'border-[#26272c] text-[#A09E96]' : 'border-[#eae8df] text-[#777168]'
               }`}
             >
@@ -392,16 +392,16 @@ export default function App() {
             </span>
           </div>
 
-          <div className="space-y-2.5">
+          <div className="space-y-3">
             {/* Layer 3: Governed Agent Workflows */}
             <div
-              className={`p-4 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-2 ${
+              className={`p-5 sm:p-6 lg:px-8 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4 lg:gap-8 ${
                 isDark
                   ? 'border-[#26272c] border-l-blue-400 bg-[#15171d]'
                   : 'border-[#dcd9ce] border-l-[#2F4BFF] bg-white'
               }`}
             >
-              <div>
+              <div className="max-w-3xl space-y-1">
                 <div
                   className={`font-mono text-xs font-semibold tracking-tight ${
                     isDark ? 'text-[#EDEDEB]' : 'text-[#1F1F1D]'
@@ -410,7 +410,7 @@ export default function App() {
                   3. Governed Agent Workflows
                 </div>
                 <div
-                  className={`text-xs mt-0.5 ${
+                  className={`text-xs leading-relaxed ${
                     isDark ? 'text-[#DEDCD4]' : 'text-[#33312C]'
                   }`}
                 >
@@ -428,13 +428,13 @@ export default function App() {
 
             {/* Layer 2: Context & Systems Integration Mesh */}
             <div
-              className={`p-4 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-2 ${
+              className={`p-5 sm:p-6 lg:px-8 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4 lg:gap-8 ${
                 isDark
                   ? 'border-[#26272c] border-l-emerald-400 bg-[#15171d]'
                   : 'border-[#dcd9ce] border-l-[#15803d] bg-white'
               }`}
             >
-              <div>
+              <div className="max-w-3xl space-y-1">
                 <div
                   className={`font-mono text-xs font-semibold tracking-tight ${
                     isDark ? 'text-[#EDEDEB]' : 'text-[#1F1F1D]'
@@ -443,7 +443,7 @@ export default function App() {
                   2. Enterprise Context & Connectors
                 </div>
                 <div
-                  className={`text-xs mt-0.5 ${
+                  className={`text-xs leading-relaxed ${
                     isDark ? 'text-[#DEDCD4]' : 'text-[#33312C]'
                   }`}
                 >
@@ -461,13 +461,13 @@ export default function App() {
 
             {/* Layer 1: Private AI Core */}
             <div
-              className={`p-4 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-2 ${
+              className={`p-5 sm:p-6 lg:px-8 border border-l-3 rounded-[2px] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4 lg:gap-8 ${
                 isDark
                   ? 'border-[#26272c] border-l-purple-400 bg-[#15171d]'
                   : 'border-[#dcd9ce] border-l-[#4338ca] bg-white'
               }`}
             >
-              <div>
+              <div className="max-w-3xl space-y-1">
                 <div
                   className={`font-mono text-xs font-semibold tracking-tight ${
                     isDark ? 'text-[#EDEDEB]' : 'text-[#1F1F1D]'
@@ -476,7 +476,7 @@ export default function App() {
                   1. Private AI Core
                 </div>
                 <div
-                  className={`text-xs mt-0.5 ${
+                  className={`text-xs leading-relaxed ${
                     isDark ? 'text-[#DEDCD4]' : 'text-[#33312C]'
                   }`}
                 >
@@ -494,7 +494,7 @@ export default function App() {
 
             {/* Foundation Boundary Line */}
             <div
-              className={`p-3 border font-mono text-xs text-center border-dashed rounded-[2px] ${
+              className={`p-3.5 border font-mono text-xs text-center border-dashed rounded-[2px] ${
                 isDark
                   ? 'border-[#383a42] bg-[#1a1c22] text-[#C0BEBB]'
                   : 'border-[#c2beb2] bg-[#F2F0E8] text-[#1F1F1D]'
@@ -527,10 +527,10 @@ export default function App() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {/* Principle 1: Model Independence */}
             <div
-              className={`p-5 border rounded-[2px] space-y-2.5 transition-colors ${
+              className={`p-6 lg:p-7 border rounded-[2px] space-y-3 transition-colors ${
                 isDark ? 'border-[#26272c] bg-[#14151a]' : 'border-[#dcd9ce] bg-white'
               }`}
             >
@@ -554,7 +554,7 @@ export default function App() {
                 Keep your models. Route, evaluate, and swap frontier models or private weights as research moves. Your business logic and schemas never get locked into an external provider.
               </p>
               <div
-                className={`pt-2 font-mono text-[10px] tracking-wide border-t border-dashed ${
+                className={`pt-2.5 font-mono text-[10px] tracking-wide border-t border-dashed ${
                   isDark ? 'border-[#2a2c34] text-[#8C8A82]' : 'border-[#e8e5dc] text-[#6B665F]'
                 }`}
               >
@@ -564,7 +564,7 @@ export default function App() {
 
             {/* Principle 2: Zero-Egress Boundary */}
             <div
-              className={`p-5 border rounded-[2px] space-y-2.5 transition-colors ${
+              className={`p-6 lg:p-7 border rounded-[2px] space-y-3 transition-colors ${
                 isDark ? 'border-[#26272c] bg-[#14151a]' : 'border-[#dcd9ce] bg-white'
               }`}
             >
@@ -584,7 +584,7 @@ export default function App() {
                 Keep your systems. Runs inside your AWS VPC, GCP project, Azure tenant, or air-gapped data center. Your database keys and customer records never cross our perimeter.
               </p>
               <div
-                className={`pt-2 font-mono text-[10px] tracking-wide border-t border-dashed ${
+                className={`pt-2.5 font-mono text-[10px] tracking-wide border-t border-dashed ${
                   isDark ? 'border-[#2a2c34] text-[#8C8A82]' : 'border-[#e8e5dc] text-[#6B665F]'
                 }`}
               >
@@ -594,7 +594,7 @@ export default function App() {
 
             {/* Principle 3: Transactional Execution (Asymmetric accent to break perfect regularity) */}
             <div
-              className={`p-5 border-2 rounded-[2px] space-y-2.5 transition-colors relative ${
+              className={`p-6 lg:p-7 border-2 rounded-[2px] space-y-3 transition-colors relative ${
                 isDark
                   ? 'border-[#383a42] bg-[#171920]'
                   : 'border-[#1F1F1D] bg-[#FAF9F5]'
@@ -606,7 +606,7 @@ export default function App() {
                   Transactional Safety
                 </div>
                 <span
-                  className={`text-[9px] font-mono px-1 border rounded-[1px] ${
+                  className={`text-[9px] font-mono px-1.5 py-0.5 border rounded-[1px] ${
                     isDark
                       ? 'border-[#C96A2B]/40 text-[#C96A2B] bg-[#C96A2B]/10'
                       : 'border-[#C96A2B] text-[#C96A2B] bg-[#FFF8F2]'
@@ -623,7 +623,7 @@ export default function App() {
                 Not a chat playground. Governed agents designed for multi-step operational workflows that alter state across ERPs and databases with rollback logs and human approval stops.
               </p>
               <div
-                className={`pt-2 font-mono text-[10px] tracking-wide border-t border-dashed ${
+                className={`pt-2.5 font-mono text-[10px] tracking-wide border-t border-dashed ${
                   isDark ? 'border-[#333640] text-[#C96A2B]' : 'border-[#dcd9ce] text-[#C96A2B]'
                 }`}
               >
@@ -656,20 +656,20 @@ export default function App() {
           </div>
 
           <div
-            className={`border p-6 sm:p-8 rounded-[2px] space-y-4 ${
+            className={`border p-6 sm:p-10 lg:p-12 rounded-[2px] space-y-5 ${
               isDark ? 'border-[#26272c] bg-[#14151a]' : 'border-[#dcd9ce] bg-white'
             }`}
           >
-            <div className="space-y-1">
+            <div className="space-y-1.5 max-w-2xl">
               <h3
-                className={`font-serif text-xl font-medium tracking-tight ${
+                className={`font-serif text-xl sm:text-2xl font-medium tracking-tight ${
                   isDark ? 'text-[#EDEDEB]' : 'text-[#1F1F1D]'
                 }`}
               >
                 Request a confidential technical briefing.
               </h3>
               <p
-                className={`text-xs font-mono ${
+                className={`text-xs sm:text-sm font-mono leading-relaxed ${
                   isDark ? 'text-[#A09E96]' : 'text-[#5A554F]'
                 }`}
               >
@@ -678,7 +678,7 @@ export default function App() {
             </div>
 
             {!submitted ? (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md pt-2">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-lg pt-1">
                 <input
                   type="email"
                   id="briefing-input-email"
@@ -686,7 +686,7 @@ export default function App() {
                   placeholder="name@enterprise.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className={`px-3 py-2 text-xs font-mono border flex-1 rounded-[2px] focus:outline-hidden ${
+                  className={`px-3.5 py-2.5 text-xs font-mono border flex-1 rounded-[2px] focus:outline-hidden ${
                     isDark
                       ? 'bg-[#1a1c22] border-[#383a42] text-white focus:border-white'
                       : 'bg-[#FAF9F5] border-[#1F1F1D] text-[#1F1F1D] focus:border-[#1F1F1D]'
@@ -695,7 +695,7 @@ export default function App() {
                 <button
                   type="submit"
                   id="btn-submit-briefing"
-                  className={`px-4 py-2 text-xs font-mono font-medium rounded-[2px] border transition-transform cursor-pointer ${
+                  className={`px-5 py-2.5 text-xs font-mono font-medium rounded-[2px] border transition-transform cursor-pointer shrink-0 ${
                     isDark
                       ? 'border-[#EDEDEB] bg-[#EDEDEB] text-[#111215] shadow-manual-dark hover:bg-white'
                       : 'border-[#1F1F1D] bg-[#1F1F1D] text-[#FAF9F5] shadow-manual hover:bg-[#33312c]'
@@ -706,7 +706,7 @@ export default function App() {
               </form>
             ) : (
               <div
-                className={`p-3 border font-mono text-xs flex items-center gap-2 rounded-[2px] ${
+                className={`p-3.5 border font-mono text-xs flex items-center gap-2.5 rounded-[2px] max-w-lg ${
                   isDark
                     ? 'border-emerald-800/40 bg-emerald-950/20 text-emerald-400'
                     : 'border-emerald-300 bg-emerald-50 text-emerald-900'
@@ -727,7 +727,7 @@ export default function App() {
           isDark ? 'border-[#26272c] text-[#A09E96]' : 'border-[#e0ded5] text-[#5A554F]'
         }`}
       >
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-12 py-10 sm:py-12 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             © {new Date().getFullYear()} CloseMindLabs. India-first, globally deployable.
           </div>
