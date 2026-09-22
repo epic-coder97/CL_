@@ -47,4 +47,25 @@
   box-shadow: 1px 1px 0px #ededeb;
 }
 
+/* Subtle Terminal Monitor Scanline Overlay */
+.scanline-overlay {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(31, 31, 29, 0.022) 0px,
+    rgba(31, 31, 29, 0.022) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+.dark .scanline-overlay {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.028) 0px,
+    rgba(255, 255, 255, 0.028) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
 

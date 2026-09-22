@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check, Shield, Layers, Lock, Cpu, Server, PlayCircle } from 'lucide-react';
 import { PaperGrain } from './components/PaperGrain';
+import { TerminalThesis } from './components/TerminalThesis';
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -22,6 +23,13 @@ export default function App() {
     >
       {/* 1970s-80s subtle natural paper grain texture (4.8% opacity, canvas-generated PNG) */}
       <PaperGrain isDark={isDark} />
+
+      {/* Subtle Terminal Monitor Scanline Overlay */}
+      <div
+        id="terminal-monitor-scanlines"
+        aria-hidden="true"
+        className="fixed inset-0 pointer-events-none z-30 scanline-overlay"
+      />
 
       {/* Top Archival Document Masthead */}
       <header
@@ -140,17 +148,8 @@ export default function App() {
             It runs inside infrastructure you control, connecting your existing systems so governed agents can execute real work.
           </p>
 
-          {/* Operator Opinionated Thesis Line */}
-          <div
-            className={`p-3.5 border-l-2 rounded-r-[2px] font-mono text-xs sm:text-[13px] leading-relaxed max-w-2xl transition-colors ${
-              isDark
-                ? 'border-l-[#2F4BFF] bg-[#161b26] text-[#EDEDEB]'
-                : 'border-l-[#2F4BFF] bg-[#F2F6FC] text-[#1F1F1D]'
-            }`}
-          >
-            <span className="text-[#2F4BFF] font-semibold">// THESIS: </span>
-            <span className="font-medium">Keep your systems. Keep your models. Add the layer that makes them operational.</span>
-          </div>
+          {/* Terminal-style Real-time Typing Thesis Block */}
+          <TerminalThesis isDark={isDark} />
 
           {/* Hero CTA - Hardware/Manual Button Style */}
           <div className="pt-2 flex flex-wrap items-center gap-4">
