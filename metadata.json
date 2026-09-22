@@ -1,0 +1,6 @@
+{
+  "name": "CloseMindLabs",
+  "description": "The private AI operating layer for companies that want to own their intelligence. Deploy inside customer infrastructure, connect to enterprise data, and run governed agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
